@@ -1,0 +1,266 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Header Styles */
+header {
+    background-color: #222;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f7b42c;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url(./Ratan-Tata4.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Life Section */
+.life-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    color: white;
+    overflow: hidden;
+}
+
+.back-video {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+    filter: grayscale(100%);
+    left: 40%;
+}
+
+.life-section h2,
+.life-content {
+    position: relative;
+    z-index: 2;
+}
+
+.life-section h2 {
+    font-size: 60px;
+    color: white;
+    transform: translateY(-250px);
+}
+
+.life-content {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    color: #ddd;
+    transform: translateX(-125%);
+}
+
+/* Achievements Section */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 40px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 60px;
+    margin: 0 40px;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+/* Legacy and Impact Section */
+.legacy-h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Legacy and Impact Section */
+.legacy-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.impact-tiles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: nowrap;
+}
+
+.tile {
+    width: 250px; 
+    height: 250px;
+    margin: 30px;
+    perspective: 1000px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tile-front,
+.tile-back {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: space-between; /* Space between h3 and p */
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 0.6s;
+    border-radius: 20%;
+}
+
+.tile-front {
+    background-color: #444;
+}
+
+.tile-front h3 {
+    margin: 70px 0 0; /* Ensure h3 is positioned near the top */
+    font-size: 2rem;
+}
+
+.tile-front p {
+    margin: 0 0 70px; /* Ensure p is positioned near the bottom */
+    font-size: 1rem;
+    max-width: 200px;
+    text-align: center;
+    margin-left: 9%;
+}
+
+.tile-back {
+    background-color: #555;
+    transform: rotateY(180deg);
+}
+
+.tile-back p{
+    margin-top: 6%;
+    max-width: 200px;
+    margin-left: 8%;
+}
+
+.tile:hover .tile-front {
+    transform: rotateY(180deg);
+}
+
+.tile:hover .tile-back {
+    transform: rotateY(360deg);
+}
+
+
+/* Quote Section */
+.quote-section {
+    margin-top: 50px;
+}
+
+.quote-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quote-btn:hover {
+    background-color: #ddd;
+}
+
+#quote-display {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

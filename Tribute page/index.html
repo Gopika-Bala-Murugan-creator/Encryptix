@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Ratan Tata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#life">Life</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#legacy">Legacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="overlay">
+            <h1>Honoring a Visionary Leader<br> Ratan Tata</h1>
+            <p>A Legacy of Integrity, Leadership, and Compassion</p>
+        </div>
+    </section>
+
+    <!-- Life Section -->
+    <section id="life" class="life-section">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./ratan tata.mp4" type="video/mp4">
+        </video>
+        <h2>The Life of Ratan Tata</h2>
+        <div class="life-content">
+            <p>Ratan Tata, born on December 28, 1937, is one of the most influential industrialists in India. He played a pivotal role in transforming the Tata Group into a global brand. Raised by his grandmother, Ratan Tata's humble yet determined beginnings shaped his values of integrity and leadership.</p>
+            <p>Throughout his life, he balanced entrepreneurship with compassion, focusing on philanthropic endeavors that have had a lasting impact across various sectors like healthcare, education, and rural development.</p>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="./logos/tata logo.png">
+                <img src="./logos/tcs logo.png">
+                <img src="./logos/tata motors logo.png">
+                <img src="./logos/tata 1mg logo.png">
+                <img src="./logos/tata elxis logo.png">
+                <img src="./logos/tata steel logo.png">
+                <img src="./logos/jaguar logo.png">
+                <img src="./logos/land rover logo.png">
+                <img src="./logos/starbucks logo.png">
+                <img src="./logos/tata aia logo.png">
+                <img src="./logos/tata aig logo.png">
+                <img src="./logos/tata capital logo.png">
+                <img src="./logos/tata class edge logo.png">
+                <img src="./logos/westside logo.png">
+                <img src="./logos/zudio logo.png">
+            </div>
+            <div class="logos-slide">
+                <img src="./logos/tata cliq logo.png">
+                <img src="./logos/tata communication logo.png">
+                <img src="./logos/tata docomo logo.png">
+                <img src="./logos/tata fastrack logo.png">
+                <img src="./logos/tata himalayan logo.png">
+                <img src="./logos/tata play logo.png">
+                <img src="./logos/tata salt logo.png">
+                <img src="./logos/tata sampann logo.png">
+                <img src="./logos/tata soulfull logo.png">
+                <img src="./logos/tata tanishq logo.png">
+                <img src="./logos/tata tea logo.png">
+                <img src="./logos/tata teleservices limited logo.png">
+                <img src="./logos/tata titan logo.png">
+                <img src="./logos/tcs ion logo.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy and Impact Section -->
+    <section id="legacy" class="legacy-section">
+        <h2 class="legacy-h2">Legacy and Impact</h2>
+        <div class="legacy-content">
+            <p>Ratan Tata's legacy transcends his business accomplishments, encompassing philanthropy, global leadership, and sustainable innovation. Explore key aspects of his contributions below:</p>
+
+            <!-- Interactive Impact Tiles -->
+            <div class="impact-tiles">
+                <div class="tile">
+                    <div class="tile-front">
+                        <h3>Philanthropy</h3>
+                        <p>Ratan Tata’s contributions to society.</p>
+                    </div>
+                    <div class="tile-back">
+                        <p>Through the Tata Trusts, he has dedicated 60% of Tata Group’s profits to education, healthcare, and social upliftment. His initiatives have impacted millions, improving lives across India.</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile-front">
+                        <h3>Globalization</h3>
+                        <p>Making Tata a global name.</p>
+                    </div>
+                    <div class="tile-back">
+                        <p>Under Ratan Tata's leadership, Tata Group expanded globally, acquiring iconic brands like Jaguar Land Rover, and establishing Tata as a respected name in over 100 countries.</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile-front">
+                        <h3>Innovation</h3>
+                        <p>Driving groundbreaking projects.</p>
+                    </div>
+                    <div class="tile-back">
+                        <p>Ratan Tata led the creation of the Tata Nano, the world's most affordable car, and Tata’s focus on sustainability has set new standards in the automotive and steel industries.</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile-front">
+                        <h3>Leadership</h3>
+                        <p>Ethics and leadership principles.</p>
+                    </div>
+                    <div class="tile-back">
+                        <p>Known for his ethical leadership, Ratan Tata's humility, vision, and strong sense of responsibility have earned him the admiration of global leaders and industry peers alike.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Quote Section -->
+            <div class="quote-section">
+                <h3>Quotes by Ratan Tata</h3>
+                <button class="quote-btn" onclick="generateQuote()">Get Inspired</button>
+                <p id="quote-display"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Tribute to Ratan Tata - BY GOPIKA BALA MURUGAN</p>
+    </footer>
+
+    <script>
+        const quotes = [
+            "I don’t believe in taking right decisions. I take decisions and then make them right.",
+            "Ups and downs in life are very important to keep us going, because a straight line, even in an ECG, means we are not alive.",
+            "Take the stones people throw at you, and use them to build a monument.",
+            "If you want to walk fast, walk alone. But if you want to walk far, walk together."
+        ];
+    
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById('quote-display').innerText = quotes[randomIndex];
+        }
+    </script>
+    
+
+</body>
+</html>
